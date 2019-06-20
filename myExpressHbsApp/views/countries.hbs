@@ -1,0 +1,13 @@
+<h1>Quel countries allons nous détruire ?</h1>
+<h2> Express App : {{countries.title}}</h2><br>
+<select name="countries">
+  {{#each countries}}
+  
+      {{#compare this.code 'FR' operator='=='}}
+        <option value="{{this.code}}" selected>{{this.name}}</option>
+      {{else}}
+        <option value="{{this.code}}">{{this.name}}</option>
+      {{/compare}}
+
+  {{/each}}
+</select>

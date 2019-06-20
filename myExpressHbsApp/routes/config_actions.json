@@ -1,0 +1,50 @@
+{
+  "GET/": {
+    "controler": "index"
+  },
+  "GET/exos": {
+    "controler": "exos"
+  },
+  "GET/countries": {
+    "controler": "countries",
+    "view":"countries",
+    "return_type":"application/json"
+  },
+  "GET/formUser": {
+    "controler": "formUser",
+    "modelName": "Users",
+    "view":"formUser"
+  },
+  "GET/modifyUser": {
+    "controler": "update",
+    "view": "modifyUser",
+    "modelName": "Users"
+  },
+  "GET/newUser": {
+    "controler": "newUser"
+  },
+  "GET/createUser": {
+    "controler": "createUser"
+  },
+  "GET/users": {
+    "controler": "finder",
+    "view": "users",
+    "modelName": "Users"
+  },
+  "GET/deleteUser": {
+    "controler": "delete",
+    "view": "users",
+    "modelName": "Users"
+  },
+  "GET/updateUser": {
+    "controler": "update",
+    "view": "users",
+    "modelName": "Users"
+},
+"GET/userspopulate" : {
+  "controler": "populate",
+  "view": "userspopulate",
+  "modelName": "Users",
+  "pop_ref": "countries"
+  }
+}
